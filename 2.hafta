@@ -1,0 +1,68 @@
+
+#SORU 1
+
+# print("Merhaba, bu program iki sayiyi toplayacak")
+# sayi1 = input("Birinci sayiyi giriniz: ")
+# sayi2 = input("Ikinci sayi giriniz: ")
+#
+# #inputlardan gelen veriler string olduklari icin onları toplama islemini yapabilmek icin donusum yapmamız gerekli int ya da float cevirebiliriz
+# toplam = float(sayi1) + float(sayi2)
+#
+# print(f"Toplam: {toplam}")
+
+
+
+#SORU 2
+#
+# toplam = 0  #for icindeki toplam degiskeni disarida tanimlanmali
+# for i in range(1, 101):
+#     toplam += i
+#
+# print("1'den 100'e kadar olan sayilarin toplami: ", toplam)
+#
+#
+
+
+#SORU 3
+
+
+# sayi = int(input("Bir sayi giriniz: "))
+#
+# if sayi <= 1: # 1 ve 1`den kucuk sayilar asal sayi degildir
+#     print("Asal sayi degil")
+# elif sayi == 2: # 2 asal sayidir
+#     print("Asal sayi")
+# elif sayi % 2 == 0: # 2 haric cift sayilar asal sayi degildir
+#     print("Asal sayi degil")
+# else:
+#     asalmi = True
+#     for i in range(3, (sayi // 2) + 1, 2): # 3'ten baslayip ikiser artarak sayi'nin yarisina kadar olan sayilari kontrol ediyoruz cunku yarisindan buyuk olan sayilar tam olarak bolunmeyecektir
+#         if sayi % i == 0:
+#             asalmi = False
+#             break
+#
+#     if asalmi:
+#         print("Asal sayi")
+#     else:
+#         print("Asal sayi degil")
+
+
+#SORU 4
+
+# def tekrar_edenleri_bul(dizi):
+#     tekrar_listesi = []
+#
+#     for i in range(len(dizi)): #dizinin uzunlugu kadar donuyoruz
+#         for j in range(i + 1, len(dizi)): #i+1 den baslayarak dizinin uzunluguna kadar eldeki degeri diger degerlerle kontrol ediyoruz
+#             if dizi[i] == dizi[j]:
+#                 if dizi[i] not in tekrar_listesi:
+#                     tekrar_listesi.append(dizi[i])
+#     return tekrar_listesi
+#
+#
+# dizi = [11, 42235, 33255, 7466, 3462, 25236, 3468, 6575, 46346, 325643, 33255, 11]
+# tekrar_listesi = tekrar_edenleri_bul(dizi)
+# if tekrar_listesi:
+#     print("Dizide tekrar eden sayilar: ", tekrar_listesi)
+# else:
+#     print("Dizide tekrar eden sayi yok.")
